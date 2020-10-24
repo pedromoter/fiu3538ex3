@@ -1,20 +1,59 @@
+<!--
+    Pedro Moter
+    Exercise 2 
+    Customization using CSS glboal rules of Ex1.
+
+-->
+
 <!DOCTYPE html>
 <html>
+
+
     <head>
         <meta name="author" content="Pedro Moter">
         <title> Assignment 1</title>
+
+        <style>
+            .html,body {
+                font-family : 'roboto';
+                width: 100%;
+                height: 100%;
+            }
+            h1 {
+                color : red
+            }
+
+            h2 {
+                color : blue 
+            }
+
+            ul {
+                color : gold
+            }
+
+            p {
+                text-align: center;
+                max-width:  80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+        </style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
     </head>
 
     <body>
 
         <img style="width:  100%; max-width: 1200px;"src="http://ci.miami.fl.us/home/images/headers/KBMsiteheadernew2.jpg">
 
-        <h1>Miami Town Hall</h1>
-        <h3> Celebrating 125 years</h3>
+        <h1 >Miami Town Hall</h1>
+        <h3> Celebrating <b>125 years</b></h3>
 
 
         <h2>Our History</h2>
-        <p>
+        <p >
             The City of Miami was a seven-car coach streamliner inaugurated by Illinois Central Railroad on December 18, 1940. Its route was from Chicago to Miami a total distance of 1,493 miles.
         </p>
 
@@ -34,8 +73,9 @@
         </ul>
 
 
-        <h2>Seaon Speakers</h2>
-        <div style="display: flex; flex-direction: row;">
+        <h2>Season Speakers</h2>
+        <div style="text-align:center; width  : 50%; margin-left: auto; margin-right:auto;  margin-top: 30px;">
+        <div style="display: flex; flex-direction: row; margin-bottom: 50px;">
             <img style="max-width : 150px; border-radius : 100%;" src="pedro.jpeg">
             <div style="display: flex; flex-direction :column; margin-left: 20px;">
                 <h3>Pedro Moter</h3>
@@ -43,6 +83,15 @@
             </div>
         </div>
 
+        <div style="display: flex; flex-direction: row;">
+            <img style="max-width : 150px; border-radius : 100%;" src="pedro.jpeg">
+            <div style="display: flex; flex-direction :column; margin-left: 20px;">
+                <h3>Elon Musk</h3>
+                <span>November 2020</span>
+            </div>
+        </div>
+
+    </div>
 
         <div style="position: absolute; bottom : 0;">
             &#169; City Of Miami.
